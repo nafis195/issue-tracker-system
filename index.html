@@ -11,3 +11,46 @@ Time - 10:10 PM
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Issue Tracker System</title>
+</head>
+<body>
+    <div class="main-div"> 
+        <div class="header">
+            <h1>Issue Tracker System</h1>
+        </div>
+        <div class="new-issue">
+            <div class="jumbotron">
+                <h3 class="new-issue-header">Add New Issue:</h3>
+                <form>
+                    <div class="form-group">
+                      <label for="description-field">Description</label>
+                      <input type="issue-description" class="form-control" id="description" aria-describedby="emailHelp" placeholder="Describe the issue...">
+                    </div>
+                    <div class="form-group">
+                      <label for="severity-field">Severity</label>
+                      <select name="issueSeverity" class="form-control">
+                          <option value="low">Low</option>
+                          <option value="mid">Mid</option>
+                          <option value="high">High</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="assign-to">Assign To</label>
+                        <input type="issue-assign" class="form-control" id="assignTo" aria-describedby="assignee" placeholder="Enter responsible">
+                      </div>
+                    <button type="submit" class="btn btn-success">Add Issue</button>
+                  </form>
+              </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
