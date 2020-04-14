@@ -18,3 +18,24 @@ Time - 10:07 PM
 .new-issue{
     margin: 50px;
 }
+
+.jumbotron label{
+    font-weight: 600;
+}
+
+.jumbotron{
+    margin-bottom: 30px;
+}
+
+.tracker-buttons{
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.search input{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search input ::placeholder{
+}

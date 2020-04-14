@@ -27,30 +27,49 @@ Time - 10:10 PM
         </div>
         <div class="new-issue">
             <div class="jumbotron">
+                <div class=" justify-content-center d-flex">
+                    <div class="tracker-buttons">
+                        <button class="btn btn-success">
+                            <div id="openBtn">Open : </div>
+                        </button>
+                        <button class="btn btn-warning">
+                            <div id="closeBtn">Close : </div>
+                        </button>
+                        <button class="btn btn-danger">
+                            <div id="deleteBtn">Delete : </div>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="search">
+                        <input type="search" class="form-control" id="searchID" placeholder="Search by ID...">
+                    </div>
+                </div>
                 <h3 class="new-issue-header">Add New Issue:</h3>
                 <form>
                     <div class="form-group">
-                      <label for="description-field">Description</label>
-                      <input type="issue-description" class="form-control" id="description" aria-describedby="emailHelp" placeholder="Describe the issue...">
+                      <label for="description">Description</label>
+                      <input type="issue-description" class="form-control" id="description" aria-describedby="describe" placeholder="Describe the issue...">
                     </div>
                     <div class="form-group">
-                      <label for="severity-field">Severity</label>
-                      <select name="issueSeverity" class="form-control">
+                      <label for="severity">Severity</label>
+                      <select id="severity" class="form-control">
                           <option value="low">Low</option>
                           <option value="mid">Mid</option>
                           <option value="high">High</option>
                       </select>
                     </div>
                     <div class="form-group">
-                        <label for="assign-to">Assign To</label>
-                        <input type="issue-assign" class="form-control" id="assignTo" aria-describedby="assignee" placeholder="Enter responsible">
+                        <label for="assignTo">Assign To</label>
+                        <input type="issue-assign" class="form-control" id="assignTo" aria-describedby="assignee" placeholder="Enter responsible...">
                       </div>
-                    <button type="submit" class="btn btn-success">Add Issue</button>
+                    <button type="submit" class="btn btn-primary">Add Issue</button>
                   </form>
               </div>
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
